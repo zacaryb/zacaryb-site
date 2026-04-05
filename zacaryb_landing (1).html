@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zacary B — Entrepreneur · Creator · Car Culture · KC</title>
+<meta name="description" content="Zacary B — Custom grillz, jewelry, stickers, car content. Based in Kansas City.">
+<meta property="og:title" content="Zacary B">
+<meta property="og:description" content="Entrepreneur · Creator · Car Culture · KC">
+<meta property="og:url" content="https://zacaryb.com">
+
+<!-- Google Analytics — replace GA_MEASUREMENT_ID with your real ID -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');</script> -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold:#b8952a;--g2:#1e1908;--bg:#080808;--s1:#111;--s2:#181818;
+  --b1:#252525;--b2:#303030;--text:#f0f0f0;--muted:#777;--faint:#333;
+  --green:#27ae60;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:300;overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:0;opacity:0.3;}
+.page{position:relative;z-index:1;max-width:520px;margin:0 auto;padding:3rem 1.25rem 5rem;}
+
+/* HERO */
+.hero{display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:2rem;}
+.avatar-ring{width:90px;height:90px;border-radius:50%;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;animation:pulse 3s ease-in-out infinite;}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(184,149,42,0.15);}50%{box-shadow:0 0 0 10px rgba(184,149,42,0.04);}}
+.avatar-inner{width:80px;height:80px;border-radius:50%;background:var(--s2);display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue';font-size:30px;color:var(--gold);letter-spacing:2px;}
+.name{font-family:'Bebas Neue';font-size:44px;letter-spacing:4px;color:var(--text);line-height:1;margin-bottom:6px;}
+.tagline{font-size:13px;color:var(--muted);line-height:1.6;max-width:300px;margin-bottom:1.25rem;}
+
+/* SOCIALS */
+.socials{display:flex;gap:7px;flex-wrap:wrap;justify-content:center;margin-bottom:0.75rem;}
+.sbtn{display:flex;align-items:center;gap:6px;background:var(--s1);border:0.5px solid var(--b1);border-radius:20px;padding:7px 13px;font-size:11px;color:var(--muted);text-decoration:none;transition:border-color 0.2s,color 0.2s;}
+.sbtn:hover{border-color:var(--gold);color:var(--gold);}
+.live{display:flex;align-items:center;gap:6px;font-size:10px;color:var(--muted);letter-spacing:0.5px;margin-bottom:2.5rem;}
+.dot{width:6px;height:6px;border-radius:50%;background:#27ae60;animation:blink 2s ease-in-out infinite;}
+@keyframes blink{0%,100%{opacity:1;}50%{opacity:0.3;}}
+
+/* DIVIDER + LABELS */
+.divider{width:100%;height:0.5px;background:var(--faint);margin:0.25rem 0 1.5rem;}
+.sec-label{font-size:10px;letter-spacing:3px;color:var(--faint);text-transform:uppercase;width:100%;margin-bottom:0.75rem;}
+
+/* CARDS */
+.card{width:100%;background:var(--s1);border:0.5px solid var(--b1);border-radius:14px;padding:15px 18px;display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;text-decoration:none;color:inherit;transition:border-color 0.2s,background 0.2s;}
+.card:hover{border-color:var(--gold);background:#131108;}
+.card.gold{border-color:var(--gold);background:#131108;}
+.card-left{display:flex;align-items:center;gap:13px;}
+.card-icon{width:40px;height:40px;border-radius:10px;background:var(--s2);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.card.gold .card-icon{background:#1e1908;}
+.card-title{font-size:14px;font-weight:500;}
+.card-sub{font-size:11px;color:var(--muted);margin-top:2px;}
+.badge{font-size:9px;letter-spacing:1px;text-transform:uppercase;padding:2px 7px;border-radius:8px;border:0.5px solid var(--gold);color:var(--gold);background:#1e1908;margin-left:7px;vertical-align:middle;}
+.badge.green{border-color:var(--green);color:var(--green);background:#0d1e0d;}
+.arrow{color:var(--gold);font-size:16px;flex-shrink:0;}
+
+/* SOCIAL LINK ROW */
+.link-row{display:flex;gap:7px;margin-bottom:12px;flex-wrap:wrap;}
+.lbtn{flex:1;min-width:80px;display:flex;align-items:center;justify-content:center;gap:5px;background:var(--s1);border:0.5px solid var(--b1);border-radius:9px;padding:8px 10px;font-size:11px;color:var(--muted);text-decoration:none;transition:border-color 0.2s,color 0.2s;}
+.lbtn:hover{border-color:var(--gold);color:var(--gold);}
+
+/* WEEKLY UPDATE */
+.update-box{width:100%;background:var(--s1);border:0.5px solid var(--b1);border-radius:14px;padding:15px 18px;margin-bottom:10px;}
+.update-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:7px;}
+.update-title{font-size:13px;font-weight:500;}
+.update-date{font-size:10px;color:var(--muted);}
+.update-text{font-size:12px;color:var(--muted);line-height:1.6;}
+.ptags{display:flex;gap:5px;margin-top:8px;flex-wrap:wrap;}
+.ptag{font-size:9px;padding:2px 8px;border-radius:12px;border:0.5px solid var(--faint);color:var(--faint);}
+.ptag.on{border-color:var(--gold);color:var(--gold);}
+
+/* FEATURED VIDEO */
+.video-wrap{width:100%;border-radius:14px;overflow:hidden;background:var(--s2);border:0.5px solid var(--b1);margin-bottom:10px;position:relative;}
+.video-thumb{width:100%;aspect-ratio:9/16;max-height:520px;object-fit:cover;display:block;cursor:pointer;}
+.video-thumb-fallback{width:100%;aspect-ratio:16/9;background:linear-gradient(135deg,#1a1208 0%,#0f0f0f 50%,#1a1208 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;cursor:pointer;}
+.play-btn{width:60px;height:60px;border-radius:50%;background:rgba(184,149,42,0.15);border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;}
+.play-btn svg{margin-left:4px;}
+.video-label{font-family:'Bebas Neue';font-size:16px;letter-spacing:2px;color:var(--text);}
+.video-sub{font-size:11px;color:var(--muted);}
+.video-badge{position:absolute;top:12px;right:12px;background:rgba(0,0,0,0.8);border:0.5px solid var(--gold);border-radius:12px;padding:4px 11px;font-size:10px;color:var(--gold);}
+.video-badge2{position:absolute;top:12px;left:12px;background:rgba(0,0,0,0.8);border:0.5px solid var(--b2);border-radius:12px;padding:4px 11px;font-size:10px;color:var(--muted);}
+
+/* PHOTO GRID — like Beacons */
+.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;width:100%;margin-bottom:10px;border-radius:14px;overflow:hidden;}
+.photo-grid.grid2{grid-template-columns:repeat(2,1fr);}
+.grid-item{position:relative;aspect-ratio:1;overflow:hidden;cursor:pointer;display:block;text-decoration:none;}
+.grid-item img{width:100%;height:100%;object-fit:cover;transition:transform 0.3s;}
+.grid-item:hover img{transform:scale(1.05);}
+.grid-item .grid-overlay{position:absolute;inset:0;background:rgba(0,0,0,0);transition:background 0.2s;display:flex;align-items:flex-end;padding:8px;}
+.grid-item:hover .grid-overlay{background:rgba(0,0,0,0.4);}
+.grid-caption{font-size:9px;color:rgba(255,255,255,0);transition:color 0.2s;letter-spacing:0.5px;}
+.grid-item:hover .grid-caption{color:rgba(255,255,255,0.9);}
+.grid-item.featured{grid-column:span 2;aspect-ratio:2/1;}
+
+/* PLACEHOLDER grid items when no image */
+.grid-placeholder{background:var(--s2);display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--faint);letter-spacing:1px;text-transform:uppercase;}
+
+/* SUBSCRIBE */
+.sub-box{width:100%;background:var(--s2);border:0.5px solid var(--b1);border-radius:14px;padding:18px;margin-bottom:10px;}
+.sub-title{font-size:14px;font-weight:500;margin-bottom:4px;}
+.sub-sub{font-size:11px;color:var(--muted);margin-bottom:12px;line-height:1.5;}
+.sub-row{display:flex;gap:8px;}
+.sub-inp{flex:1;background:var(--bg);border:0.5px solid var(--b2);border-radius:8px;padding:10px 13px;font-size:12px;color:var(--text);font-family:'DM Sans';outline:none;}
+.sub-inp:focus{border-color:var(--gold);}
+.sub-btn{background:var(--g2);border:0.5px solid var(--gold);border-radius:8px;padding:10px 15px;font-size:11px;color:var(--gold);cursor:pointer;font-family:'DM Sans';white-space:nowrap;}
+.sub-btn:hover{background:#252008;}
+.sub-ok{font-size:11px;color:var(--green);margin-top:8px;display:none;}
+
+/* SERVICE FORM */
+.svc-box{width:100%;background:var(--s1);border:0.5px solid var(--b1);border-radius:14px;padding:18px;margin-bottom:10px;}
+.svc-title{font-size:14px;font-weight:500;margin-bottom:4px;}
+.svc-sub{font-size:11px;color:var(--muted);margin-bottom:12px;line-height:1.5;}
+.svc-types{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:12px;}
+.stype{background:var(--s2);border:0.5px solid var(--b2);border-radius:8px;padding:9px 12px;font-size:11px;color:var(--muted);cursor:pointer;text-align:center;transition:all 0.2s;}
+.stype.sel{border-color:var(--gold);color:var(--gold);background:var(--g2);}
+.stype:hover{border-color:var(--b2);color:var(--text);}
+.finput{width:100%;background:var(--s2);border:0.5px solid var(--b2);border-radius:8px;padding:9px 13px;font-size:12px;color:var(--text);font-family:'DM Sans';outline:none;margin-bottom:8px;}
+.finput:focus{border-color:var(--gold);}
+.ftextarea{width:100%;background:var(--s2);border:0.5px solid var(--b2);border-radius:8px;padding:9px 13px;font-size:12px;color:var(--text);font-family:'DM Sans';outline:none;resize:vertical;min-height:70px;margin-bottom:8px;}
+.ftextarea:focus{border-color:var(--gold);}
+.submit-btn{width:100%;background:var(--g2);border:0.5px solid var(--gold);border-radius:8px;padding:12px;font-size:12px;color:var(--gold);cursor:pointer;font-family:'DM Sans';letter-spacing:1px;}
+.submit-btn:hover{background:#252008;}
+.form-ok{font-size:11px;color:var(--green);margin-top:8px;display:none;text-align:center;}
+
+/* CONTACT */
+.contact-row{display:flex;gap:8px;width:100%;}
+.cbtn{flex:1;background:var(--s1);border:0.5px solid var(--b1);border-radius:12px;padding:13px;display:flex;flex-direction:column;align-items:center;gap:5px;font-size:11px;color:var(--muted);text-decoration:none;transition:all 0.2s;}
+.cbtn:hover{border-color:var(--gold);color:var(--gold);}
+.cbtn.primary{background:var(--g2);border-color:var(--gold);color:var(--gold);}
+
+.footer{margin-top:3rem;font-size:10px;color:#252525;letter-spacing:2px;text-transform:uppercase;text-align:center;}
+
+/* FADE IN */
+.fi{opacity:0;transform:translateY(14px);animation:fadeUp 0.5s ease forwards;}
+@keyframes fadeUp{to{opacity:1;transform:translateY(0);}}
+.d1{animation-delay:0.05s;}.d2{animation-delay:0.12s;}.d3{animation-delay:0.2s;}
+.d4{animation-delay:0.28s;}.d5{animation-delay:0.36s;}.d6{animation-delay:0.44s;}
+.d7{animation-delay:0.52s;}.d8{animation-delay:0.6s;}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HERO -->
+  <div class="hero fi d1">
+    <div class="avatar-ring">
+      <div class="avatar-inner">ZB</div>
+    </div>
+    <div class="name">Zacary B</div>
+    <div class="tagline">Entrepreneur · Creator · Car culture · Custom grillz · Jewelry · Stickers · Documenting the journey from KC</div>
+  </div>
+
+  <!-- SOCIALS -->
+  <div class="socials fi d2">
+    <a href="https://instagram.com/zacary_b" class="sbtn" target="_blank" rel="noopener" onclick="track('instagram_personal')">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      @zacary_b
+    </a>
+    <a href="https://tiktok.com/@zacary_b" class="sbtn" target="_blank" rel="noopener" onclick="track('tiktok_personal')">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+      @zacary_b
+    </a>
+    <a href="https://snapchat.com/add/zacary_b" class="sbtn" target="_blank" rel="noopener" onclick="track('snapchat_personal')">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12.206 1c.93 0 4.197.254 5.732 3.542.528 1.12.4 3.037.318 4.358l-.01.17c-.003.05.04.106.09.12.24.066.52.102.83.104.46.003.94-.1 1.27-.268a.444.444 0 01.19-.045c.1 0 .196.022.274.066.22.12.34.35.307.6-.066.507-.625.878-1.22 1.075-.078.026-.198.054-.336.082-.378.078-.948.194-1.108.638-.088.246-.044.534.133.857l.01.018c.82 1.47 2.054 2.4 3.674 2.766.2.044.34.23.316.43-.064.49-1.026.826-2.34 1.054-.104.018-.18.114-.166.22.02.15.044.3.07.446.062.37.054.476-.142.57-.12.056-.25.072-.372.072-.208 0-.393-.054-.534-.09a4.064 4.064 0 00-.988-.126c-.408 0-.778.07-1.1.208-.62.268-1.165.882-2.008 1.562-.65.52-1.407.832-2.186.832-.036 0-.072-.002-.108-.004-.036.002-.072.004-.108.004-.78 0-1.536-.312-2.186-.832-.844-.68-1.39-1.294-2.008-1.562a3.84 3.84 0 00-1.1-.208c-.364 0-.698.058-.988.126-.14.036-.326.09-.534.09-.122 0-.252-.016-.372-.073-.196-.093-.204-.198-.142-.568.026-.146.05-.296.07-.447.014-.106-.062-.202-.166-.22-1.314-.228-2.276-.564-2.34-1.053a.388.388 0 01.316-.43c1.62-.366 2.854-1.296 3.674-2.766l.01-.018c.177-.323.22-.61.133-.857-.16-.444-.73-.56-1.108-.638-.138-.028-.258-.056-.336-.082-.594-.197-1.154-.568-1.22-1.075a.6.6 0 01.307-.6.537.537 0 01.274-.066c.067 0 .13.016.19.045.33.167.81.27 1.27.268.31-.002.59-.038.83-.104.05-.014.093-.07.09-.12l-.01-.17c-.082-1.32-.21-3.238.318-4.358C7.797 1.254 11.064 1 11.994 1h.212z"/></svg>
+      Zacary_B
+    </a>
+    <a href="https://facebook.com/zacaryb" class="sbtn" target="_blank" rel="noopener" onclick="track('facebook_personal')">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+      Facebook
+    </a>
+  </div>
+
+  <div class="live fi d2">
+    <span class="dot"></span>
+    Most active on Instagram & TikTok
+  </div>
+
+  <!-- WEEKLY UPDATE -->
+  <div class="sec-label fi d3">This week</div>
+  <div class="update-box fi d3">
+    <div class="update-header">
+      <div class="update-title">What's going on</div>
+      <div class="update-date">Updated weekly</div>
+    </div>
+    <div class="update-text">Grillz orders moving, ZBVinyl live on Etsy, new car content dropping on Fast Adventures. Follow along — big moves happening.</div>
+    <div class="ptags">
+      <span class="ptag on">Instagram</span>
+      <span class="ptag on">TikTok</span>
+      <span class="ptag on">Snapchat</span>
+      <span class="ptag">YouTube soon</span>
+    </div>
+  </div>
+
+  <div class="divider fi d3"></div>
+
+  <!-- FAST ADVENTURES -->
+  <div class="sec-label fi d3">Fast Adventures</div>
+
+  <!-- FEATURED VIDEO — Escalade V -->
+  <div class="video-wrap fi d3">
+    <div class="video-badge">160K views 🔥</div>
+    <div class="video-badge2">@fast_adventures</div>
+    <div class="video-thumb-fallback" onclick="openVideo()" style="cursor:pointer;">
+      <!-- Using oEmbed thumbnail approach -->
+      <div class="play-btn">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#b8952a"><polygon points="5,3 19,12 5,21"/></svg>
+      </div>
+      <div class="video-label">2024 Escalade V — Full Send</div>
+      <div class="video-sub">600HP factory supercharged · Kansas City</div>
+    </div>
+  </div>
+  <div style="margin-bottom:10px;text-align:center;">
+    <a href="https://www.instagram.com/fast_adventures/reel/DVyWEavj0ij/" target="_blank" rel="noopener" onclick="track('escalade_video')" style="font-size:11px;color:var(--gold);text-decoration:none;">▶ Watch the full reel on Instagram →</a>
+  </div>
+
+  <!-- CAR PHOTO GRID -->
+  <!-- Using Instagram's CDN thumbnail pattern via oembed -->
+  <div class="photo-grid fi d4" id="car-grid">
+    <!-- Grid items injected by JS using IG oembed thumbnails, fallback to placeholder -->
+    <a href="https://www.instagram.com/fast_adventures/reel/DVyWEavj0ij/" target="_blank" rel="noopener" class="grid-item featured" onclick="track('grid_escalade')" style="background:var(--s2);">
+      <div style="width:100%;height:100%;background:linear-gradient(135deg,#1a1208,#0a0a0a);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;">
+        <div style="font-size:28px;">🚙</div>
+        <div style="font-family:'Bebas Neue';font-size:16px;color:var(--gold);letter-spacing:2px;">Escalade V</div>
+        <div style="font-size:10px;color:var(--muted);">160K views · Tap to watch</div>
+      </div>
+    </a>
+    <a href="https://www.instagram.com/p/CMaVMTPFSA6/" target="_blank" rel="noopener" class="grid-item" onclick="track('grid_huracan')" style="background:var(--s2);">
+      <div style="width:100%;height:100%;background:linear-gradient(135deg,#0a1020,#080808);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;">
+        <div style="font-size:22px;">🏎</div>
+        <div style="font-size:9px;color:var(--muted);letter-spacing:1px;">Huracán Rollers</div>
+      </div>
+    </a>
+    <a href="https://www.instagram.com/p/CMdAXwDFjT-/" target="_blank" rel="noopener" class="grid-item" onclick="track('grid_mclaren')" style="background:var(--s2);">
+      <div style="width:100%;height:100%;background:linear-gradient(135deg,#101010,#080808);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;">
+        <div style="font-size:22px;">🏎</div>
+        <div style="font-size:9px;color:var(--muted);letter-spacing:1px;">McLaren 720S</div>
+      </div>
+    </a>
+    <a href="https://www.instagram.com/p/Cey0bCdLvL8/" target="_blank" rel="noopener" class="grid-item" onclick="track('grid_supercars')" style="background:var(--s2);">
+      <div style="width:100%;height:100%;background:linear-gradient(135deg,#1a0808,#080808);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;">
+        <div style="font-size:22px;">🚗</div>
+        <div style="font-size:9px;color:var(--muted);letter-spacing:1px;">Supercars</div>
+      </div>
+    </a>
+    <a href="https://www.instagram.com/p/CeXGJNKr0h9/" target="_blank" rel="noopener" class="grid-item" onclick="track('grid_camaros')" style="background:var(--s2);">
+      <div style="width:100%;height:100%;background:linear-gradient(135deg,#080808,#1a1208);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;">
+        <div style="font-size:22px;">💨</div>
+        <div style="font-size:9px;color:var(--muted);letter-spacing:1px;">Camaros</div>
+      </div>
+    </a>
+    <a href="https://www.instagram.com/p/CIR79I7FL88/" target="_blank" rel="noopener" class="grid-item" onclick="track('grid_corvette')" style="background:var(--s2);">
+      <div style="width:100%;height:100%;background:linear-gradient(135deg,#0a1a0a,#080808);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;">
+        <div style="font-size:22px;">🏁</div>
+        <div style="font-size:9px;color:var(--muted);letter-spacing:1px;">C8 Corvette</div>
+      </div>
+    </a>
+  </div>
+
+  <!-- FAST ADVENTURES LINKS -->
+  <a href="https://instagram.com/fast_adventures" class="card fi d4" target="_blank" rel="noopener" onclick="track('fa_main')">
+    <div class="card-left">
+      <div class="card-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b8952a" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      </div>
+      <div>
+        <div class="card-title">Fast Adventures</div>
+        <div class="card-sub">Cars · exotics · aviation · adventures</div>
+      </div>
+    </div>
+    <div class="arrow">→</div>
+  </a>
+  <div class="link-row fi d4">
+    <a href="https://instagram.com/fast_adventures" class="lbtn" target="_blank" rel="noopener" onclick="track('fa_ig')">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      Instagram
+    </a>
+    <a href="https://www.tiktok.com/@fast_adventures" class="lbtn" target="_blank" rel="noopener" onclick="track('fa_tt')">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+      TikTok
+    </a>
+    <a href="https://www.facebook.com/fastadventures" class="lbtn" target="_blank" rel="noopener" onclick="track('fa_fb')">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+      Facebook
+    </a>
+  </div>
+
+  <div class="divider fi d4"></div>
+
+  <!-- BUSINESSES -->
+  <div class="sec-label fi d5">Work with me</div>
+
+  <!-- ICE LAB -->
+  <a href="https://instagram.com/zacary_b" class="card gold fi d5" target="_blank" rel="noopener" onclick="track('icelab')">
+    <div class="card-left">
+      <div class="card-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b8952a" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      </div>
+      <div>
+        <div class="card-title">The Ice Lab <span class="badge">Custom grillz</span></div>
+        <div class="card-sub">Custom grillz · jewelry · pendants · DM to order</div>
+      </div>
+    </div>
+    <div class="arrow">→</div>
+  </a>
+
+  <!-- RADIANT ICE -->
+  <a href="https://radiantice.com" class="card fi d5" target="_blank" rel="noopener" onclick="track('radiantice_main')">
+    <div class="card-left">
+      <div class="card-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b8952a" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+      </div>
+      <div>
+        <div class="card-title">Radiant Ice</div>
+        <div class="card-sub">Watches · jewelry · brokering · radiantice.com</div>
+      </div>
+    </div>
+    <div class="arrow">→</div>
+  </a>
+  <div class="link-row fi d5">
+    <a href="https://radiantice.com" class="lbtn" target="_blank" rel="noopener" onclick="track('ri_web')">🌐 Website</a>
+    <a href="https://instagram.com/shopradiantice" class="lbtn" target="_blank" rel="noopener" onclick="track('ri_ig')">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      Instagram
+    </a>
+    <a href="https://www.tiktok.com/@shopradiantice" class="lbtn" target="_blank" rel="noopener" onclick="track('ri_tt')">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+      TikTok
+    </a>
+    <a href="https://www.facebook.com/shopradiantice" class="lbtn" target="_blank" rel="noopener" onclick="track('ri_fb')">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+      Facebook
+    </a>
+  </div>
+
+  <!-- ZBVINYL -->
+  <a href="https://www.etsy.com/shop/zbvinyl" class="card fi d5" target="_blank" rel="noopener" onclick="track('zbvinyl_main')">
+    <div class="card-left">
+      <div class="card-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b8952a" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+      </div>
+      <div>
+        <div class="card-title">ZBVinyl <span class="badge green">Live on Etsy</span></div>
+        <div class="card-sub">Custom stickers · decals · car accessories</div>
+      </div>
+    </div>
+    <div class="arrow">→</div>
+  </a>
+  <div class="link-row fi d5">
+    <a href="https://www.etsy.com/shop/zbvinyl" class="lbtn" target="_blank" rel="noopener" onclick="track('zv_etsy')" style="flex:1.5;">🛍 Etsy Shop — 687+ sales</a>
+    <a href="https://instagram.com/zbvinyl" class="lbtn" target="_blank" rel="noopener" onclick="track('zv_ig')">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      @zbvinyl
+    </a>
+  </div>
+
+  <div class="divider fi d6"></div>
+
+  <!-- SUBSCRIBE -->
+  <div class="sec-label fi d6">Stay in the loop</div>
+  <div class="sub-box fi d6">
+    <div class="sub-title">Follow the journey</div>
+    <div class="sub-sub">New content, drops, and updates straight to your email. No spam — just the good stuff.</div>
+    <div class="sub-row">
+      <input class="sub-inp" type="email" id="sub-email" placeholder="your@email.com">
+      <button class="sub-btn" onclick="handleSub()">Subscribe</button>
+    </div>
+    <div class="sub-ok" id="sub-ok">✓ You're in! Welcome to the journey.</div>
+  </div>
+
+  <div class="divider fi d6"></div>
+
+  <!-- SERVICE REQUEST -->
+  <div class="sec-label fi d7">Request a service</div>
+  <div class="svc-box fi d7">
+    <div class="svc-title">What do you need?</div>
+    <div class="svc-sub">Custom grillz, jewelry repair, watch brokering, vinyl/stickers — let's talk.</div>
+    <div class="svc-types">
+      <div class="stype" onclick="selSvc(this,'Custom Grillz')">🦷 Custom Grillz</div>
+      <div class="stype" onclick="selSvc(this,'Jewelry / Watch')">💎 Jewelry / Watch</div>
+      <div class="stype" onclick="selSvc(this,'Stickers / Vinyl')">🎨 Stickers / Vinyl</div>
+      <div class="stype" onclick="selSvc(this,'Other')">✦ Other</div>
+    </div>
+    <input class="finput" type="text" id="r-name" placeholder="Your name">
+    <input class="finput" type="text" id="r-contact" placeholder="Your email or IG handle">
+    <textarea class="ftextarea" id="r-details" placeholder="Tell me what you're looking for — more detail = faster quote..."></textarea>
+    <input class="finput" type="text" id="r-budget" placeholder="Budget range (optional)">
+    <button class="submit-btn" onclick="handleReq()">Send request →</button>
+    <div class="form-ok" id="req-ok">✓ Opening your email app now — just hit send!</div>
+  </div>
+
+  <div class="divider fi d7"></div>
+
+  <!-- CONTACT -->
+  <div class="sec-label fi d7">Get in touch</div>
+  <div class="contact-row fi d7">
+    <a href="https://instagram.com/zacary_b" class="cbtn primary" target="_blank" rel="noopener" onclick="track('contact_ig')">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      DM on Instagram
+    </a>
+    <a href="mailto:zacary.boh@gmail.com" class="cbtn" onclick="track('contact_email')">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      Email me
+    </a>
+  </div>
+
+  <div class="footer fi d8">zacaryb.com · built different</div>
+</div>
+
+<script>
+// ── ANALYTICS TRACKING (works with Google Analytics when enabled) ──
+function track(label) {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'click', { event_category: 'link', event_label: label });
+  }
+  // Also store locally for basic self-analytics
+  try {
+    const clicks = JSON.parse(localStorage.getItem('zb_clicks') || '{}');
+    clicks[label] = (clicks[label] || 0) + 1;
+    clicks['_last'] = new Date().toISOString();
+    localStorage.setItem('zb_clicks', JSON.stringify(clicks));
+  } catch(e) {}
+}
+
+// Track page view
+track('page_view');
+
+// ── VIDEO ──
+function openVideo() {
+  window.open('https://www.instagram.com/fast_adventures/reel/DVyWEavj0ij/', '_blank');
+  track('escalade_play');
+}
+
+// ── SUBSCRIBE ──
+function handleSub() {
+  const email = document.getElementById('sub-email').value.trim();
+  if (!email || !email.includes('@')) {
+    document.getElementById('sub-email').style.borderColor = '#c0392b';
+    document.getElementById('sub-email').placeholder = 'Enter a valid email!';
+    return;
+  }
+  try {
+    const subs = JSON.parse(localStorage.getItem('zb_subs') || '[]');
+    subs.push({ email, date: new Date().toISOString() });
+    localStorage.setItem('zb_subs', JSON.stringify(subs));
+  } catch(e) {}
+  document.getElementById('sub-ok').style.display = 'block';
+  document.getElementById('sub-email').value = '';
+  document.getElementById('sub-email').style.borderColor = '';
+  track('subscribe');
+}
+
+// ── SERVICE REQUEST ──
+let selectedSvc = '';
+function selSvc(el, type) {
+  document.querySelectorAll('.stype').forEach(s => s.classList.remove('sel'));
+  el.classList.add('sel');
+  selectedSvc = type;
+}
+function handleReq() {
+  const name = document.getElementById('r-name').value.trim();
+  const contact = document.getElementById('r-contact').value.trim();
+  const details = document.getElementById('r-details').value.trim();
+  if (!name || !contact || !details) {
+    alert('Please fill in your name, contact info, and details.');
+    return;
+  }
+  const svc = selectedSvc || 'General inquiry';
+  const budget = document.getElementById('r-budget').value.trim();
+  const subject = encodeURIComponent('Service Request: ' + svc + ' — ' + name);
+  const body = encodeURIComponent(
+    'Service: ' + svc + '\n' +
+    'Name: ' + name + '\n' +
+    'Contact: ' + contact + '\n' +
+    'Budget: ' + (budget || 'Not specified') + '\n\n' +
+    'Details:\n' + details
+  );
+  window.location.href = 'mailto:zacary.boh@gmail.com?subject=' + subject + '&body=' + body;
+  document.getElementById('req-ok').style.display = 'block';
+  track('service_request_' + svc.toLowerCase().replace(/\s/g,'_'));
+}
+
+// ── LOAD REAL IG THUMBNAILS via oEmbed ──
+// Instagram oEmbed gives us real thumbnails without an API key
+// We fetch thumbnail URLs and replace the placeholder grid items
+const posts = [
+  { url: 'https://www.instagram.com/fast_adventures/reel/DVyWEavj0ij/', label: 'Escalade V', idx: 0 },
+  { url: 'https://www.instagram.com/p/CMaVMTPFSA6/', label: 'Huracán Rollers', idx: 1 },
+  { url: 'https://www.instagram.com/p/CMdAXwDFjT-/', label: 'McLaren 720S', idx: 2 },
+  { url: 'https://www.instagram.com/p/Cey0bCdLvL8/', label: 'Supercars', idx: 3 },
+  { url: 'https://www.instagram.com/p/CeXGJNKr0h9/', label: 'Camaros', idx: 4 },
+  { url: 'https://www.instagram.com/p/CIR79I7FL88/', label: 'C8 Corvette', idx: 5 }
+];
+
+// Try to load real thumbnails, gracefully fall back to styled placeholders
+async function loadThumbnails() {
+  const gridItems = document.querySelectorAll('#car-grid a');
+  for (let i = 0; i < posts.length; i++) {
+    try {
+      const res = await fetch(
+        'https://api.instagram.com/oembed?url=' + encodeURIComponent(posts[i].url) + '&omitscript=true',
+        { mode: 'cors' }
+      );
+      if (res.ok) {
+        const data = await res.json();
+        if (data.thumbnail_url && gridItems[i]) {
+          gridItems[i].innerHTML = `
+            <img src="${data.thumbnail_url}" alt="${posts[i].label}" loading="lazy"
+              style="width:100%;height:100%;object-fit:cover;transition:transform 0.3s;">
+            <div class="grid-overlay">
+              <span class="grid-caption">${posts[i].label}</span>
+            </div>`;
+        }
+      }
+    } catch(e) {
+      // Keep placeholder — already styled nicely
+    }
+  }
+}
+
+// Only attempt on page load
+window.addEventListener('load', loadThumbnails);
+</script>
+</body>
+</html>
